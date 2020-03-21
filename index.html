@@ -44,7 +44,113 @@ Released   : 20140207
 <div id="wrapper2">
 	<div id="welcome" class="container">
 		<div class="title">
-			<h2>Welcome to our website</h2>
+			<h2>Welcome to MetroBiz</h2>
+
+			<style>
+				#myDIV {
+				  width: 100%;
+				  padding: 50px 0;
+				  text-align: center;
+				  background-color: #fff;
+				  margin-top: 20px;
+				  margin-bottom: 20px;
+				}
+			</style>
+
+			<p onclick="myFunction(), changeText(this)">Click here for a Welcome Surprise!</p>
+			
+			<!-- <h1 onmouseover="style.color='red'"
+			onmouseout="style.color='black'">
+			Mouse over this text</h1> -->
+
+			<div id="myDIV">
+			<script>
+				function myFunction(x) {
+					var x = document.getElementById("fname");
+					x.style.background = "yellow";
+					}
+
+					function myFunction() {
+					var x = document.getElementById("fname");
+					x.value = x.value.toUpperCase();
+					}
+
+					function myFunctions() {
+					var x = document.getElementById("e-mail");
+					}
+
+			</script>
+			<p class="register-text">All you need to do is register</p>
+			
+			<h4>Enter your name: <input type="text" id="fname" onchange="myFunction()"></h4>
+			<h4>Enter your e-mail: <input type="text" id="e-mail" onchange="myFunction()"></h4>
+
+			<div class="register-info-text">
+				<h4>New costumers will recive an e-mail with the latest news and events! Just register and with your first order you will get 20% off!<br>
+				Isn't this a deal?</h4>
+			</div>
+
+			<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+			style="background-color: #261300;width:75px;height:20px;padding:20px; color:beige;margin-left:auto;margin-right:auto;display:block;margin-bottom:0%">
+			Register</div>
+
+			<script>
+				function mDown(obj) {
+					obj.style.backgroundColor = "rgba(0,0,0,0.6)";
+				}
+				
+				function mUp(obj) {
+					obj.style.backgroundColor="#261300";
+					obj.innerHTML="Thank You!";
+				}
+			</script> 
+			</div>	
+			<script>
+				function myFunction() {
+				var x = document.getElementById("myDIV");
+					if (x.style.display === "none") {
+						x.style.display = "block";
+					} 
+					else {
+						x.style.display = "none";
+					}
+				}
+				function changeText(id) {
+				id.innerHTML = "Use code 1234 to get 20% off your first purchase!";
+				}
+			</script>
+
+			
+			<!-- <p 
+			
+			function myFunction() {
+			var x = document.getElementById("fname");
+			}
+			function myFunction() {
+			var x = document.getElementById("e-mail");
+			}
+
+			</script>
+			<h4>Enter your name: <input type="text" id="fname" onchange="myFunction()"></h4>
+			<h4>Enter your e-mail: <input type="text" id="e-mail" onchange="myFunction()"></h4>
+			<h4>New costumers will recive an e-mail with the latest news and events! Just register and with your first order you will get 20% off! isn't that a deal?</h4>
+
+			<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+			style="background-color: #261300;width:75px;height:20px;padding:20px; color:beige;margin-left:auto;margin-right:auto;display:block;margin-bottom:0%">
+			Register</div>
+
+			<script>
+			function mDown(obj) {
+				obj.style.backgroundColor = "rgba(0,0,0,0.6)";
+			}
+			
+			function mUp(obj) {
+				obj.style.backgroundColor="#261300";
+				obj.innerHTML="Thank You!";
+			}
+			</script> -->
+			
+			
 		</div>
 		<p>This is <strong>MetroBiz</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
 	</div>
