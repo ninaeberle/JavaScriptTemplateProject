@@ -33,7 +33,7 @@ Released   : 20140207
 		<div id="menu">
 			<ul>
 				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
-				<li><a href="#" accesskey="2" title="">Our Clients</a></li>
+				<li><a href="ourClients.html" accesskey="2" title="">Our Clients</a></li>
 				<li><a href="#" accesskey="3" title="">About Us</a></li>
 				<li><a href="#" accesskey="4" title="">Careers</a></li>
 				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
@@ -46,6 +46,8 @@ Released   : 20140207
 		<div class="title">
 			<h2>Welcome to MetroBiz</h2>
 
+
+			<!-- DIV style that contains the registration form -->
 			<style>
 				#myDIV {
 				  width: 100%;
@@ -57,31 +59,15 @@ Released   : 20140207
 				}
 			</style>
 
-			<p onclick="myFunction(), changeText(this)">Click here for a Welcome Surprise!</p>
+			<!-- When hovering over the text it changes color  and in line 66 this text here.. -->
+			<p onclick="myFunction(), changeText(this)" onmouseover="style.color='white'" onmouseout="style.color='#261300'">
+			Click here for a Welcome Surprise!</p>
 			
-			<!-- <h1 onmouseover="style.color='red'"
-			onmouseout="style.color='black'">
-			Mouse over this text</h1> -->
-
+			<!-- ..changes to this one -->
 			<div id="myDIV">
-			<script>
-				function myFunction(x) {
-					var x = document.getElementById("fname");
-					x.style.background = "yellow";
-					}
-
-					function myFunction() {
-					var x = document.getElementById("fname");
-					x.value = x.value.toUpperCase();
-					}
-
-					function myFunctions() {
-					var x = document.getElementById("e-mail");
-					}
-
-			</script>
-			<p class="register-text">All you need to do is register</p>
+			<p class="register-text">Register for member benefits and spacial events!</p>
 			
+			<!-- input boxes for the registration in the form div -->
 			<h4>Enter your name: <input type="text" id="fname" onchange="myFunction()"></h4>
 			<h4>Enter your e-mail: <input type="text" id="e-mail" onchange="myFunction()"></h4>
 
@@ -90,92 +76,77 @@ Released   : 20140207
 				Isn't this a deal?</h4>
 			</div>
 
-			<div onmousedown="mDown(this)" onmouseup="mUp(this)"
-			style="background-color: #261300;width:75px;height:20px;padding:20px; color:beige;margin-left:auto;margin-right:auto;display:block;margin-bottom:0%">
-			Register</div>
-
-			<script>
-				function mDown(obj) {
-					obj.style.backgroundColor = "rgba(0,0,0,0.6)";
-				}
-				
-				function mUp(obj) {
-					obj.style.backgroundColor="#261300";
-					obj.innerHTML="Thank You!";
-				}
-			</script> 
-			</div>	
+			<!-- JS that has to be included in de index.js   still have to look for the problem -->
 			<script>
 				function myFunction() {
 				var x = document.getElementById("myDIV");
-					if (x.style.display === "none") {
-						x.style.display = "block";
-					} 
-					else {
-						x.style.display = "none";
-					}
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} 
+				else {
+					x.style.display = "none";
+				}
 				}
 				function changeText(id) {
 				id.innerHTML = "Use code 1234 to get 20% off your first purchase!";
 				}
 			</script>
 
-			
-			<!-- <p 
-			
-			function myFunction() {
-			var x = document.getElementById("fname");
-			}
-			function myFunction() {
-			var x = document.getElementById("e-mail");
-			}
-
-			</script>
-			<h4>Enter your name: <input type="text" id="fname" onchange="myFunction()"></h4>
-			<h4>Enter your e-mail: <input type="text" id="e-mail" onchange="myFunction()"></h4>
-			<h4>New costumers will recive an e-mail with the latest news and events! Just register and with your first order you will get 20% off! isn't that a deal?</h4>
-
+			<!-- The registration Button which changes to 'thank you!' when clicked -->
 			<div onmousedown="mDown(this)" onmouseup="mUp(this)"
 			style="background-color: #261300;width:75px;height:20px;padding:20px; color:beige;margin-left:auto;margin-right:auto;display:block;margin-bottom:0%">
 			Register</div>
 
+			<!-- JS that has to be included in the index.js  still have to look for problem -->
 			<script>
-			function mDown(obj) {
+				function mDown(obj) {
 				obj.style.backgroundColor = "rgba(0,0,0,0.6)";
-			}
-			
-			function mUp(obj) {
-				obj.style.backgroundColor="#261300";
-				obj.innerHTML="Thank You!";
-			}
-			</script> -->
-			
-			
+				}
+				
+				function mUp(obj) {
+					obj.style.backgroundColor="#261300";
+					obj.innerHTML="Thank You!";
+				}
+			</script>
+
+			</div>
+
 		</div>
+
 		<p>This is <strong>MetroBiz</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
 	</div>
 </div>
 <div id="wrapper3">
 <div id="three-column" class="container">
 	<div><span class="arrow-down"></span></div>
+
 	<div id="tbox1"> <span class="icon icon-wrench"></span>
 		<div class="title">
 			<h2>Maecenas luctus</h2>
 		</div>
-		<p>Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Duis pretium velit ac suscipit mauris. Proin eu wisi suscipit nulla suscipit interdum.</p>
-		<a href="#" class="button">Learn More</a> </div>
+		<p>Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Duis pretium velit ac suscipit mauris. Proin eu wisi suscipit nulla suscipit interdum.
+		<a href="#" class="button" onmouseover="style.color='pink'" onmouseout="style.color='white'">
+		Learn More</a></div>
+		
+
 	<div id="tbox2"> <span class="icon icon-cogs"></span>
 		<div class="title">
 			<h2>Integer gravida</h2>
 		</div>
 		<p>Proin eu wisi suscipit nulla suscipit interdum. Nullam non wisi a sem semper suscipit eleifend. Donec mattis libero eget urna. Duis pretium velit ac mauris.</p>
-		<a href="#" class="button">Learn More</a> </div>
+		<a href="#" class="button" onmouseover="style.color='pink'" onmouseout="style.color='white'">
+		Learn More</a> </div>
+
+
 	<div id="tbox3"> <span class="icon icon-legal"></span>
 		<div class="title">
 			<h2>Praesent mauris</h2>
 		</div>
 		<p>Donec mattis libero eget urna. Duis pretium velit ac mauris. Proin eu wisi suscipit nulla suscipit interdum. Nullam non wisi a sem suscipit semper eleifend.</p>
-		<a href="#" class="button">Learn More</a> </div>
+		<a href="#" class="button" onmouseover="style.color='pink'" onmouseout="style.color='white'">
+		Learn More</a> </div>
+
+
 </div>	<div id="portfolio" class="container">
 		<div class="title">
 			<h2>Vivamus fermentum nibh</h2>
@@ -184,25 +155,29 @@ Released   : 20140207
 			<div class="box"> 
 				<h3>Vestibulum venenatis</h3>
 				<p>Fermentum nibh augue praesent a lacus at urna congue rutrum.</p>
-				<a href="#" class="button button-small">Etiam posuere</a> </div>
+				<a href="#" class="button button-small" onmouseover="style.color='pink'" onmouseout="style.color='white'">
+					Etiam posuere</a> </div>
 		</div>
 		<div class="column2">
 			<div class="box">
 				<h3>Praesent scelerisque</h3>
 				<p>Vivamus fermentum nibh in augue praesent urna congue rutrum.</p>
-				<a href="#" class="button button-small">Etiam posuere</a> </div>
+				<a href="#" class="button button-small" onmouseover="style.color='pink'" onmouseout="style.color='white'">
+					Etiam posuere</a> </div>
 		</div>
 		<div class="column3">
 			<div class="box">
 				<h3>Donec dictum metus</h3>
 				<p>Vivamus fermentum nibh in augue praesent urna congue rutrum.</p>
-				<a href="#" class="button button-small">Etiam posuere</a> </div>
+				<a href="#" class="button button-small" onmouseover="style.color='pink'" onmouseout="style.color='white'">
+					Etiam posuere</a> </div>
 		</div>
 		<div class="column4">
 			<div class="box">
 				<h3>Mauris vulputate dolor</h3>
 				<p>Rutrum fermentum nibh in augue praesent urna congue rutrum.</p>
-				<a href="#" class="button button-small">Etiam posuere</a> </div>
+				<a href="#" class="button button-small" onmouseover="style.color='pink'" onmouseout="style.color='white'">
+					Etiam posuere</a> </div>
 		</div>
 	</div>
 </div>
@@ -226,4 +201,5 @@ Released   : 20140207
 	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 </div>
 </body>
+<type="text/javascript" src="index.js"></script>
 </html>
