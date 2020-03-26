@@ -13,19 +13,15 @@
     }
 
 
-
 //input boy fpr registration 
 //need to still edit the color when input 
 //need to still add some more input elements like password
-    function myFunction(x) {
-    var x = document.getElementById("fname");
+
+    function nameInput(x) {
+    // var x = document.getElementById("fname");
     x.style.background = "yellow";
     }
-    function myFunction() {
-    var x = document.getElementById("fname");
-    x.value = x.value.toUpperCase();
-    }
-    function myFunctions() {
+    function emailInput() {
     var x = document.getElementById("e-mail");
     }
 
@@ -43,6 +39,24 @@
 
 
 
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
 
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	} else {
+		mybutton.style.display = "none";
+	}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+	}
 
     
