@@ -19,6 +19,8 @@ Released   : 20140207
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="index.css" rel="stylesheet" type="text/css" media="all" />
+
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
@@ -33,14 +35,10 @@ Released   : 20140207
 		<div id="menu">
 			<ul>
 				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
-
 				<li><a href="ourClients.html" accesskey="2" title="">Our Clients</a></li>
-
-				<li><a href="#" accesskey="3" title="">About Us</a></li>
+				<li><a href="aboutUs.html" accesskey="3" title="">About Us</a></li>
 				<li><a href="#" accesskey="4" title="">Careers</a></li>
 				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
-			
-
 			</ul>
 		</div>
 	</div>
@@ -54,29 +52,20 @@ Released   : 20140207
 			<h2>Welcome to MetroBiz</h2>
 
 
-			<!-- DIV style that contains the registration form  still needs to be included in css file-->
-			<style>
-				#myDIV {
-				  width: 100%;
-				  padding: 50px 0;
-				  text-align: center;
-				  background-color: #fff;
-				  margin-top: 20px;
-				  margin-bottom: 20px;
-				}
-			</style>
 
 			<!-- When hovering over the text it changes color  and in line 68 this text here.. -->
-			<p onclick="myFunction(), changeText(this)" onmouseover="style.color='white'" onmouseout="style.color='#261300'">
-			Click here for a Welcome Surprise!</p>
+			<h3 onclick="textChanged(), changeText(this)" onmouseover="style.color='white'" onmouseout="style.color='#261300'">
+			Click here for a Welcome Surprise!</h3>
 			
 			<!-- ..changes to this one -->
 			<div id="myDIV">
 			<p class="register-text">Register for member benefits and spacial events!</p>
 			
 			<!-- input boxes for the registration in the form div -->
-			<h4>Enter your name: <input type="text" id="fname" onchange="myFunction()"></h4>
-			<h4>Enter your e-mail: <input type="text" id="e-mail" onchange="myFunction()"></h4>
+			<h4>Enter your name: <input type="text" id="fname" onfocus="nameInput(this)"></h4>
+			<h4>Enter your e-mail: <input type="text" id="e-mail" onfocus="emailInput(this)"></h4>
+			<h4>Enter your password: <input type="text" id="password" onfocus="passwordInput(this)"></h4>
+
 
 
 			<div class="register-info-text">
@@ -89,8 +78,6 @@ Released   : 20140207
 			<div onmousedown="mDown(this)" onmouseup="mUp(this)"
 			style="background-color: #261300;width:75px;height:20px;padding:20px; color:beige;margin-left:auto;margin-right:auto;display:block;margin-bottom:0%">
 			Register</div>
-
-		
 			</div>
 
 		</div>
@@ -100,27 +87,6 @@ Released   : 20140207
 </div>
 <div id="wrapper3">
 
-	 <style>
-		#myBtn {
-			display: none;
-			position: fixed;
-			bottom: 20px;
-			right: 30px;
-			z-index: 99;
-			font-size: 18px;
-			border: none;
-			outline: none;
-			background-color:  #BF1E4B;
-			color: white;
-			cursor: pointer;
-			padding: 15px;
-			border-radius: 0;
-		}
-		
-		#myBtn:hover {
-			background-color: pink;
-		}
-	</style> 
 
 	<!-- Page jumpes to top by clicking th button on the right at the bottom -->
 	<button onclick="topFunction()" id="myBtn" title="Go to top">To Top</button>
@@ -158,7 +124,8 @@ Released   : 20140207
 		Learn More</a> </div>
 
 
-</div>	<div id="portfolio" class="container">
+</div>	
+<div id="portfolio" class="container">
 		<div class="title">
 			<h2>Vivamus fermentum nibh</h2>
 			<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span> </div>

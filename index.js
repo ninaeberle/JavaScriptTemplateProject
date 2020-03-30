@@ -1,5 +1,5 @@
 //Text changes by clicking it and sale code appears
-    function myFunction() {
+    function textChanged() {
     var x = document.getElementById("myDIV");
     if (x.style.display === "none") {
         x.style.display = "block";
@@ -14,15 +14,17 @@
 
 
 //input boy fpr registration 
-//need to still edit the color when input 
 //need to still add some more input elements like password
 
     function nameInput(x) {
-    // var x = document.getElementById("fname");
-    x.style.background = "yellow";
+    x.style.background = "pink";
     }
-    function emailInput() {
-    var x = document.getElementById("e-mail");
+    function emailInput(y) {
+    y.style.background = "pink";
+    // var x = document.getElementById("e-mail");
+    }
+    function passwordInput(z) {
+        z.style.background = "pink";
     }
 
 
@@ -59,4 +61,6 @@
 	document.documentElement.scrollTop = 0;
 	}
 
+
+    
     

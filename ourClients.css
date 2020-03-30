@@ -1,4 +1,32 @@
+
+#wrapper1
+{
+    background: #242424;
+    
+}
+
 #wrapper2
 {
     background: #DC572E;
+    padding-bottom: 5px;
 }
+
+
+#wrapper3
+{
+    overflow: hidden;
+    padding: 0em 0em 8em 0em;
+    background: #FFF;
+
+}
+
+#menu li:hover a, #menu li.active a, #menu li.active span
+{
+}
+
+#menu .current_page_item a
+{
+    background: #BF1E4B;
+    color: #FFF;
+}
+
