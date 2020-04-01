@@ -20,7 +20,6 @@ anime.timeline({loop: true})
   });
 
   
-
 //Get the button
     var mybutton = document.getElementById("myBtn2");
 

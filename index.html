@@ -44,38 +44,35 @@ Released   : 20140207
 		</div>
 	</div>
 
-
-
 	<div id="wrapper2">
 		<div id="welcome" class="container">
 			<div class="title">
 				<h2>Welcome to MetroBiz</h2>
 
+				<!-- When hovering over the text it changes color  and in line 68 this text here.. -->
+				<h3 onclick="textChanged(), changeText(this)" onmouseover="style.color='white'" onmouseout="style.color='#261300'">
+				Click here for a new costumer surprise!</h3>
+				
+				<!-- ..changes to this one -->
+				<div id="whiteDIV">
+				<p class="register-text">Register for member benefits and spacial events!</p>
+				
+				<!-- input boxes for the registration in the form div -->
+				<h4>Enter your name: <input type="text" id="fname" onfocus="nameInput(this)"></h4>
+				<h4>Enter your e-mail: <input type="text" id="e-mail" onfocus="emailInput(this)"></h4>
+				<h4>Enter your password: <input type="text" id="password" onfocus="passwordInput(this)"></h4>
+
+				<div class="register-info-text">
+					<h4>New costumers will recive an e-mail with the latest news and events! Just register and with your first order you will get 20% off!<br>
+					Isn't this a deal?</h4>
+				</div>
 
 
-			<!-- When hovering over the text it changes color  and in line 68 this text here.. -->
-			<h3 onclick="textChanged(), changeText(this)" onmouseover="style.color='white'" onmouseout="style.color='#261300'">
-			Click here for a Welcome Surprise!</h3>
-			
-			<!-- ..changes to this one -->
-			<div id="myDIV">
-			<p class="register-text">Register for member benefits and spacial events!</p>
-			
-			<!-- input boxes for the registration in the form div -->
-			<h4>Enter your name: <input type="text" id="fname" onfocus="nameInput(this)"></h4>
-			<h4>Enter your e-mail: <input type="text" id="e-mail" onfocus="emailInput(this)"></h4>
-			<h4>Enter your password: <input type="text" id="password" onfocus="passwordInput(this)"></h4>
+				<!-- The registration Button which changes to 'thank you!' when clicked -->
+				<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+					style="background-color: #261300;width:75px;height:20px;padding:20px; color:beige;margin-left:auto;margin-right:auto;display:block;margin-bottom:0%">
+					Register</div>
 
-			<div class="register-info-text">
-				<h4>New costumers will recive an e-mail with the latest news and events! Just register and with your first order you will get 20% off!<br>
-				Isn't this a deal?</h4>
-			</div>
-
-
-			<!-- The registration Button which changes to 'thank you!' when clicked -->
-			<div onmousedown="mDown(this)" onmouseup="mUp(this)"
-			style="background-color: #261300;width:75px;height:20px;padding:20px; color:beige;margin-left:auto;margin-right:auto;display:block;margin-bottom:0%">
-			Register</div>
 			</div>
 
 		</div>
@@ -85,13 +82,14 @@ Released   : 20140207
 	</div>
 
 
-
 <!-- pop-up form for registration -->
-	<button class="open-button" onclick="openForm()">Join the Team</button>
+<!-- closed form, click button to open it -->
+	<button class="open-button" onclick="openForm()">Login</button>
 	
+<!-- opened form -->
 	<div class="form-popup" id="myForm">
 	  <form action="/action_page.php" class="form-container">
-		<h1>Login</h1>
+		<h1>Welcome Back!</h1>
 	
 		<label for="email"><b>E-mail</b></label>
 		<input type="text" placeholder="Enter Email" name="email" required>
@@ -99,22 +97,19 @@ Released   : 20140207
 		<label for="psw"><b>Password</b></label>
 		<input type="password" placeholder="Enter Password" name="psw" required>
 	
+<!-- when login is clicked and inputs aren't filled out an alarm apears to make sure to fill these out-->
+<!-- click close to close form -->
 		<button type="submit" class="btn">Login</button>
 		<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
 	  </form>
 	</div>
 
 
-
 	<div id="wrapper3">
 
-
-	<!-- Page jumpes to top by clicking th button on the right at the bottom -->
+<!-- Page jumpes to top by clicking th button on the right at the bottom -->
 	<button onclick="topFunction()" id="myBtn" title="Go to top">To Top</button>
 
-
-
-	
 		<div id="three-column" class="container">
 			<div><span class="arrow-down"></span></div>
 
@@ -143,9 +138,8 @@ Released   : 20140207
 				<p>Donec mattis libero eget urna. Duis pretium velit ac mauris. Proin eu wisi suscipit nulla suscipit interdum. Nullam non wisi a sem suscipit semper eleifend.</p>
 				<a href="#" class="button" onmouseover="style.color='pink'" onmouseout="style.color='white'">
 				Learn More</a> </div>
-
-
 		</div>	
+
 		<div id="portfolio" class="container">
 				<div class="title">
 					<h2>Vivamus fermentum nibh</h2>
@@ -180,6 +174,7 @@ Released   : 20140207
 				</div>
 			</div>
 		</div>
+
 	<div id="wrapper4">
 		<div id="footer" class="container">
 			<div>

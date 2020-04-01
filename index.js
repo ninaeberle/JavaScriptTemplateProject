@@ -1,6 +1,6 @@
 //Text changes by clicking it and sale code appears
     function textChanged() {
-    var x = document.getElementById("myDIV");
+    var x = document.getElementById("whiteDIV");
     if (x.style.display === "none") {
         x.style.display = "block";
     } 
@@ -13,32 +13,26 @@
     }
 
 
-//input boy fpr registration 
-//need to still add some more input elements like password
-
+//inputs for registration NEEDS TO BE
     function nameInput(x) {
     x.style.background = "pink";
     }
     function emailInput(y) {
     y.style.background = "pink";
-    // var x = document.getElementById("e-mail");
     }
     function passwordInput(z) {
         z.style.background = "pink";
     }
 
 
-
 //register button changes Text by click
     function mDown(obj) {
         obj.style.backgroundColor = "rgba(0,0,0,0.6)";
     }
-    
     function mUp(obj) {
         obj.style.backgroundColor="#261300";
         obj.innerHTML="Thank You!";
     }
-
 
 
 //Get the button
@@ -62,12 +56,12 @@
 	}
 
 
-
 // pop-up form for registration
+    
+
     function openForm() {
     document.getElementById("myForm").style.display = "block";
     }
-    
     function closeForm() {
     document.getElementById("myForm").style.display = "none";
     }

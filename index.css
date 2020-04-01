@@ -1,5 +1,5 @@
 /* white register/sign in form */
-#myDIV {
+#whiteDIV {
     width: 100%;
     padding: 50px 0;
     text-align: center;
@@ -29,7 +29,6 @@
 #myBtn:hover {
     background-color: pink;
 }
-
 
 /* register pop-up form */
 .open-button {
