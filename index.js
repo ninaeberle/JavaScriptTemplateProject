@@ -4,16 +4,16 @@
     if (x.style.display === "none") {
         x.style.display = "block";
     } 
-    else {
-        x.style.display = "none";
-    }
+    // else {
+    //     x.style.display = "none";
+    // }
     }
     function changeText(id) {
     id.innerHTML = "Use code 1234 to get 20% off your first purchase!";
     }
 
 
-//inputs for registration NEEDS TO BE
+//inputs for registration NEEDS TO BE LOGICAL
     function nameInput(x) {
     x.style.background = "pink";
     }
@@ -67,5 +67,20 @@
     }
     
 
-
+// Learn more and learn less butttons to get more information
+    function learnMore() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myButton");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Learn more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Learn less"; 
+          moreText.style.display = "inline";
+        }
+      }
 

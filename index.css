@@ -99,3 +99,21 @@
     opacity: 1;
 }
 
+
+#more {display: none;}
+
+#myButton {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 1em 2em 1em 2em;
+    background: #BF1E4B;
+    letter-spacing: 0.20em;
+    line-height: 1.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #FFF;
+    border: none;
+}
+button:focus{outline:0;}
