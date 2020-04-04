@@ -58,7 +58,7 @@ Released   : 20140207
 				<p class="register-text">Register for member benefits and spacial events!</p>
 				
 				<!-- input boxes for the registration in the form div -->
-				<h4>Enter your name: <input type="text" id="fname" onfocus="nameInput(this)"></h4>
+				<h4>Enter your name: <input type="text" id="name" onfocus="nameInput(this)"></h4>
 				<h4>Enter your e-mail: <input type="text" id="e-mail" onfocus="emailInput(this)"></h4>
 				<h4>Enter your password: <input type="text" id="password" onfocus="passwordInput(this)"></h4>
 
@@ -69,9 +69,8 @@ Released   : 20140207
 
 
 				<!-- The registration Button which changes to 'thank you!' when clicked -->
-				<div onmousedown="mDown(this)" onmouseup="mUp(this)"
-					style="background-color: #261300;width:75px;height:20px;padding:20px; color:beige;margin-left:auto;margin-right:auto;display:block;margin-bottom:0%">
-					Register</div>
+				<div class="registerButton" onmousedown="mDown(this)" onmouseup="mUp(this)">Register</div>
+				
 
 			</div>
 
@@ -119,7 +118,6 @@ Released   : 20140207
 				</div>
 				<p>Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Duis pretium velit ac suscipit mauris. Proin eu wisi suscipit nulla suscipit interdum.<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.</span></p>
 				<button onclick="learnMore()" onmouseover="style.color='pink'" onmouseout="style.color='white'" id="myButton">Learn more</button></div>
-
 				<!-- <a href="#" class="button" onclick="readMore()" onmouseover="style.color='pink'" onmouseout="style.color='white'">
 				Learn More</a></div> -->
 				
@@ -128,6 +126,7 @@ Released   : 20140207
 				<div class="title">
 					<h2>Integer gravida</h2>
 				</div>
+				<!-- read more button -->
 				<p>Proin eu wisi suscipit nulla suscipit interdum. Nullam non wisi a sem semper suscipit eleifend. Donec mattis libero eget urna. Duis pretium velit ac mauris.<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.</span></p>
 				<a href="#" class="button" onmouseover="style.color='pink'" onmouseout="style.color='white'">
 				Learn More</a> </div>

@@ -42,4 +42,10 @@ anime.timeline({loop: true})
 	}
 
 
-  
+// pop-up form for registration
+    function openForm() {
+    document.getElementById("myForm").style.display = "block";
+    }
+    function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    }

@@ -39,3 +39,12 @@ anime.timeline({loop: true})
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     }
+
+
+// pop-up form for registration
+    function openForm() {
+    document.getElementById("myForm").style.display = "block";
+    }
+    function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    }

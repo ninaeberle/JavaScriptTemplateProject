@@ -58,6 +58,33 @@ Released   : 20140207
     	<!-- Page jumpes to top by clicking th button on the right at the bottom -->
 	    <button onclick="topFunction()" id="myBtn2" title="Go to top">To Top</button>
 
+
+
+
+
+        <!-- pop-up form for registration -->
+        <!-- closed form, click button to open it -->
+	    <button class="open-button" onclick="openForm()">Login</button>
+	
+        <!-- opened form -->
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1>Welcome Back!</h1>
+        
+            <label for="email"><b>E-mail</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <!-- when login is clicked and inputs aren't filled out an alarm apears to make sure to fill these out-->
+            <!-- click close to close form -->
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+
+
     <div id="wrapper3">
 
         <div id="portfolio" class="container">

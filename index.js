@@ -15,13 +15,13 @@
 
 //inputs for registration NEEDS TO BE LOGICAL
     function nameInput(x) {
-    x.style.background = "pink";
+    x.style.background = "rgba(173, 173, 173)";
     }
     function emailInput(y) {
-    y.style.background = "pink";
+    y.style.background = "rgb(173, 173, 173)";
     }
     function passwordInput(z) {
-        z.style.background = "pink";
+        z.style.background = "rgb(173, 173, 173)";
     }
 
 
@@ -49,7 +49,7 @@
         }
 	}
 
-// When the user clicks on the button, scroll to the top of the document
+// When the user clicks on the button, scroll to the top of the page
 	function topFunction() {
 	document.body.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
@@ -57,8 +57,6 @@
 
 
 // pop-up form for registration
-    
-
     function openForm() {
     document.getElementById("myForm").style.display = "block";
     }
@@ -83,4 +81,5 @@
           moreText.style.display = "inline";
         }
       }
+
 
