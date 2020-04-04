@@ -139,9 +139,13 @@ button:focus{outline:0;}
 }
 
 
-#more {display: none;}
+/* #more {display: none;} */
 
-#myButton {
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+
+.myButton {
     display: inline-block;
     margin-top: 2em;
     padding: 1em 2em 1em 2em;

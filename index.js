@@ -66,20 +66,66 @@
     
 
 // Learn more and learn less butttons to get more information
-    function learnMore() {
-        var dots = document.getElementById("dots");
-        var moreText = document.getElementById("more");
-        var btnText = document.getElementById("myButton");
+    // function learnMore() {
+    //     var dots = document.getElementById("dots");
+    //     var moreText = document.getElementById("more");
+    //     var btnText = document.getElementById("myButton");
       
-        if (dots.style.display === "none") {
-          dots.style.display = "inline";
-          btnText.innerHTML = "Learn more"; 
-          moreText.style.display = "none";
-        } else {
-          dots.style.display = "none";
-          btnText.innerHTML = "Learn less"; 
-          moreText.style.display = "inline";
-        }
-      }
+    //     if (dots.style.display === "none") {
+    //       dots.style.display = "inline";
+    //       btnText.innerHTML = "Learn more"; 
+    //       moreText.style.display = "none";
+    //     } else {
+    //       dots.style.display = "none";
+    //       btnText.innerHTML = "Learn less"; 
+    //       moreText.style.display = "inline";
+    //     }
+    //   }
 
+function toggle1(x){
+    var dot1 = document.getElementById("dot1");
+    var more1 = document.getElementById("more1");
+    var button1 = document.getElementById("Btn1");
 
+    if(button1.innerHTML == "Learn more"){
+        dot1.style.display = "none";
+        more1.style.display = "block";
+        x.innerHTML = "Learn less";
+    }else{
+        dot1.style.display = "block";
+        more1.style.display = "none";
+        x.innerHTML = "Learn more";
+    }
+}
+ 
+function toggle2(x){
+    var dot2 = document.getElementById("dot2");
+    var more2 = document.getElementById("more2");
+    var button2 = document.getElementById("Btn2");
+
+    if(button2.innerHTML == "Learn more"){
+        dot2.style.display = "none";
+        more2.style.display = "block";
+        x.innerHTML = "Learn less";
+    }else{
+        dot2.style.display = "block";
+        more2.style.display = "none";
+        x.innerHTML = "Learn more";
+    }
+}
+ 
+function toggle3(x){
+    var dot3 = document.getElementById("dot3");
+    var more3 = document.getElementById("more3");
+    var button3 = document.getElementById("Btn3");
+
+    if(button3.innerHTML == "Learn more"){
+        dot3.style.display = "none";
+        more3.style.display = "block";
+        x.innerHTML = "Learn less";
+    }else{
+        dot3.style.display = "block";
+        more3.style.display = "none";
+        x.innerHTML = "Learn more";
+    }
+}
