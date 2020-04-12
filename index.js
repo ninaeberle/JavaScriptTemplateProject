@@ -38,7 +38,7 @@
 //Get the button
 	var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When user scrolls down 20px from the top of the page, the button apears
 	window.onscroll = function() {scrollFunction()};
 
 	function scrollFunction() {
@@ -56,7 +56,7 @@
 	}
 
 
-// pop-up form for registration
+// pop-up form for sign in
     function openForm() {
     document.getElementById("myForm").style.display = "block";
     }
@@ -65,23 +65,7 @@
     }
     
 
-// Learn more and learn less butttons to get more information
-    // function learnMore() {
-    //     var dots = document.getElementById("dots");
-    //     var moreText = document.getElementById("more");
-    //     var btnText = document.getElementById("myButton");
-      
-    //     if (dots.style.display === "none") {
-    //       dots.style.display = "inline";
-    //       btnText.innerHTML = "Learn more"; 
-    //       moreText.style.display = "none";
-    //     } else {
-    //       dots.style.display = "none";
-    //       btnText.innerHTML = "Learn less"; 
-    //       moreText.style.display = "inline";
-    //     }
-    //   }
-
+//learn more button
 function toggle1(x){
     var dot1 = document.getElementById("dot1");
     var more1 = document.getElementById("more1");
